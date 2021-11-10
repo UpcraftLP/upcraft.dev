@@ -1,6 +1,6 @@
 require('dotenv').config()
 const isProd = process.env.NODE_ENV === 'production'
-const xClacksOverhead = process.env.X_CLACKS_OVERHEAD
+const xClacksOverhead = process.env.X_CLACKS_OVERHEAD || ''
 
 const withPlugins = require('next-compose-plugins')
 const optimizedImages = require('next-optimized-images')
