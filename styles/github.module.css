@@ -1,0 +1,11 @@
+.hovered {
+    display:none;
+}
+
+.group:hover .default {
+    display:none;
+}
+
+.group:hover .hovered {
+    display:block;
+}

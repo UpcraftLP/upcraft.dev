@@ -1,0 +1,22 @@
+user-agent: SemrushBot
+disallow: /
+
+user-agent: SemrushBot-SA
+disallow: /
+
+user-agent: AhrefsBot
+disallow: /
+
+user-agent: DotBot
+disallow: /
+
+user-agent: BLEXBot
+disallow: /
+
+# crawler for https://xclacksoverhead.org
+user-agent: Dearheart
+allow: /$
+disallow: /
+
+user-agent: *
+disallow: /beta/
