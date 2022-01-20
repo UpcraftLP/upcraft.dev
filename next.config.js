@@ -1,26 +1,22 @@
 require('dotenv').config()
 const isProd = process.env.NODE_ENV === 'production'
-const xClacksOverhead = process.env.X_CLACKS_OVERHEAD || ''
 
-const withPlugins = require('next-compose-plugins')
-const optimizedImages = require('next-optimized-images')
+const getHeaders = async () => {
+    const headers = []
 
-const rawImages = ({src, width, quality }) => src
+    if(process.env.X_CLACKS_OVERHEAD) {
+        headers += {
+            source: '/(.*)', // match ALL urls
+            headers: [{
+                key: 'X-Clacks-Overhead',
+                value: process.env.X_CLACKS_OVERHEAD,
+            }],
+        }
+    }
+}
 
 const cfg = {
-    async headers() {
-        return [
-            {
-                source: '/(.*)', // match ALL urls
-                headers: [
-                    {
-                        key: 'X-Clacks-Overhead',
-                        value: xClacksOverhead,
-                    },
-                ]
-            },
-        ]
-    },
+    headers: getHeaders,
     trailingSlash: true,
     productionBrowserSourceMaps: true,
     assetPrefix: isProd ? '/' : '',
@@ -29,4 +25,6 @@ const cfg = {
     }
 }
 
+const withPlugins = require('next-compose-plugins')
+const optimizedImages = require('next-optimized-images')
 module.exports = withPlugins([optimizedImages], cfg)
