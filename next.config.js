@@ -13,6 +13,8 @@ const getHeaders = async () => {
             }],
         }
     }
+    
+    return headers;
 }
 
 const cfg = {
