@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Icon } from 'flowbite-svelte-icons';
-    import ExternalLinkLite from '../components/ExternalLinkLite.svelte';
+    import SocialLink from '../components/SocialLink.svelte';
     import Meta from '../components/Meta.svelte';
 </script>
 
@@ -24,12 +24,12 @@
             </div>
         </div>
         <div class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2">
-            <ExternalLinkLite name="GitHub" target="https://github.com/upcraftlp">
+            <SocialLink name="GitHub" target="github">
                 <Icon name="github-solid" class="w-6 h-6 rounded-full hover:text-gray-950 focus:text-gray-950 hover:bg-slate-50 focus:bg-slate-50 focus:outline-none" />
-            </ExternalLinkLite>
-            <ExternalLinkLite name="Twitter / X" target="https://twitter.com/upcraftlp">
+            </SocialLink>
+            <SocialLink name="Twitter / X" target="twitter">
                 <Icon name="twitter-solid" class="w-6 h-6 hover:text-sky-400 focus:text-sky-400 focus:outline-none" />
-            </ExternalLinkLite>
+            </SocialLink>
         </div>
     </div>
 </div>
