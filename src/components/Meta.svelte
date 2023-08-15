@@ -30,12 +30,13 @@
     description={description}
     canonical={currentPageUrl}
     twitter={{
-        cardType: "summary_large_image",
+        cardType: "summary",
         site: twitterHandle,
         title: formattedTitle,
         description: description,
         image,
         imageAlt,
+        handle: twitterHandle,
     }}
     openGraph={{
         url: currentPageUrl,
