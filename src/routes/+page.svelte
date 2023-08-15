@@ -20,7 +20,7 @@
             <div class="m-auto text-xl font-medium text-center">
                 <h1 class="text-5xl italic">Up</h1>
                 <h2 class="tracking-wide">Indie game developer</h2>
-                <h2 class="tracking-tight">Java, C#, Web, C++</h2>
+                <h2 class="tracking-tight">Java, C#, Web</h2>
             </div>
         </div>
         <div class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2">
