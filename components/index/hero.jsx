@@ -6,8 +6,8 @@ export const Hero = () => (
         <div className="text-center font-gisha">
             <img src="/profile_picture.webp" width="128" height="128" className="m-auto rounded-xl" alt="Profile Picture" />
             <div className="m-auto text-xl font-medium text-center">
-                <h2 className="tracking-wide">Indie game developer</h2>
                 <h1 className="text-5xl italic">Up</h1>
+                <h2 className="tracking-wide">Indie game developer</h2>
                 <h2 className="tracking-tight">Java, C#, Web, C++</h2>
             </div>
         </div>
