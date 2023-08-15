@@ -2,10 +2,6 @@ export interface SocialsList {
     readonly [key: string]: string | undefined;
 }
 
-export function getAllSocials(): string[] {
-    return Object.keys(socials);
-}
-
 export const socials: SocialsList = {
     bluesky: "https://bsky.app/profile/up-is.gay",
     //TODO discord
