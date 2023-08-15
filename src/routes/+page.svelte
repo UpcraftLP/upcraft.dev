@@ -30,6 +30,11 @@
             <SocialLink name="Twitter / X" target="twitter">
                 <Icon name="twitter-solid" class="w-6 h-6 hover:text-sky-400 focus:text-sky-400 focus:outline-none" />
             </SocialLink>
+            <SocialLink name="Bluesky" target="bluesky">
+                <div class="inline-flex items-center gap-1 hover:text-sky-300">
+                    <p>Bluesky</p><Icon name="arrow-up-right-from-square-outline" class="w-4 h-4" />
+                </div>
+            </SocialLink>
         </div>
     </div>
 </div>
