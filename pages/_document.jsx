@@ -56,7 +56,7 @@ class MyDocument extends Document {
                     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                     <link rel="preload" href="/fonts/gisha.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
                 </Head>
-                <body className="bg-gray-900 font-bold font-sans">
+                <body className="font-sans font-bold bg-gray-900">
                     <Main />
                     <NextScript />
                 </body>

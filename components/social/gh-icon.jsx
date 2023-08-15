@@ -12,7 +12,7 @@ export const GithubIcon = ({ target, name, size }) => (
                 <SvgComponent alt={name} />
             </div>
             <div className={classNames("w-6 h-6", styles.default)}>
-                <FontAwesomeIcon className="w-6 h-6 rounded-full text-2xl" icon={['fab', 'github']} />
+                <FontAwesomeIcon className="w-6 h-6 text-2xl rounded-full" icon={['fab', 'github']} />
             </div>
         </a>
     </Link>

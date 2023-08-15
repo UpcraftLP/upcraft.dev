@@ -8,7 +8,7 @@ export const SocialIcon = ({ target, name, icon, size, iconStyle, children }) =>
 
     return (
         <Link href={target} passHref>
-            <a className="group h-min w-min relative mx-1" target="_blank" rel="noreferrer" title={name}>
+            <a className="relative mx-1 group h-min w-min" target="_blank" rel="noreferrer" title={name}>
                 <div className="w-6 h-6 rounded-full">
                     {icon instanceof Array
                         ? <FontAwesomeIcon className={`text-2xl ${iconStyle || ""}`} icon={icon} />
