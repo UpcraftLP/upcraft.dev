@@ -30,9 +30,9 @@
   },
   "type": "module",
   "dependencies": {
-    "@rodneylab/svelte-social-icons": "^0.0.28",
     "flowbite": "^1.8.1",
     "flowbite-svelte": "^0.43.2",
-    "flowbite-svelte-icons": "^0.3.6"
+    "flowbite-svelte-icons": "^0.3.6",
+    "tailwind-merge": "^1.14.0"
   }
 }

@@ -269,11 +269,6 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@rodneylab/svelte-social-icons@^0.0.28":
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/@rodneylab/svelte-social-icons/-/svelte-social-icons-0.0.28.tgz#aa0435f0f70340af07a1d16c25e550dd9d364123"
-  integrity sha512-lk9JoIo97xc2SVEuA3tdWkLFLBG//d9V3w6IpiUaHZwVCrIlyYUZZ2NsStHIttzlxJHcrUhP7ZOyB4kJwlBO5w==
-
 "@sveltejs/adapter-auto@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-auto/-/adapter-auto-2.1.0.tgz#cb36fd7081e3c4b1c9a9192b1a23c8c82dce8a1b"
