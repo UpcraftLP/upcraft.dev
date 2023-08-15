@@ -1,8 +1,12 @@
 <script lang="ts">
-    import { Icon, icons } from 'flowbite-svelte-icons';
+    import { Icon } from 'flowbite-svelte-icons';
     import ExternalLinkLite from '../components/ExternalLinkLite.svelte';
+    import Meta from '../components/Meta.svelte';
 </script>
 
+<Meta
+    title="Home"
+/>
 <div class="flex items-center justify-center w-full h-screen">
     <div class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50">
         <div class="text-center font-gisha">
