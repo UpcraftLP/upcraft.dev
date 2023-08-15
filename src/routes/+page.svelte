@@ -2,10 +2,11 @@
     import { Icon } from "flowbite-svelte-icons";
     import SocialLink from "../components/SocialLink.svelte";
     import Meta from "../components/Meta.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 
 <Meta title="Home" />
-<div class="flex items-center justify-center w-full h-screen">
+<div class="flex flex-col items-center justify-center w-full h-screen">
     <div
         class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50"
     >
@@ -49,4 +50,5 @@
             </SocialLink>
         </div>
     </div>
+    <Footer />
 </div>
