@@ -3,7 +3,7 @@ export interface SocialsList {
 }
 
 export const socials: SocialsList = {
-    bluesky: "https://bsky.app/profile/up-is.gay",
+    bluesky: "https://bsky.app/profile/did:plc:77uzn2lx2zhtdgr5zfvzumji",
     //TODO discord
     github: "https://github.com/upcraftlp",
     kofi: "https://ko-fi.com/upcraftlp",
