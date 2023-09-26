@@ -9,6 +9,6 @@ export const socials: SocialsList = {
     kofi: "https://ko-fi.com/upcraftlp",
     steam: "https://steamcommunity.com/id/upcraftlp",
     twitch: "https://twitch.tv/upcraftlp",
-    twitter: "https://twitter.com/upcraftlp",
+    twitter: "https://x.com/upcraftlp",
     youtube: "https://youtube.com/@upcraft_",
 };
