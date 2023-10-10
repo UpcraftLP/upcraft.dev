@@ -30,7 +30,7 @@
             </div>
             <hr class="pb-1">
             <SocialLink name="Donate on Ko-Fi" target="kofi">
-                <h3 class="text-xl group inline-flex items-center gap-1"><HeartSolid class="w-6 h-6 text-pink-500" /><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" /></h3>
+                <h3 class="text-2xl font-medium group inline-flex items-center gap-1"><HeartSolid class="w-6 h-6 text-pink-500" /><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" /></h3>
             </SocialLink>
         </div>
         <div
