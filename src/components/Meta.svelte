@@ -50,6 +50,6 @@
                 alt: imageAlt,
             },
         ],
-        site_name: siteName,
+        siteName: siteName,
     }}
 />

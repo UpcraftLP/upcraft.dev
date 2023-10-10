@@ -1,5 +1,9 @@
 <script lang="ts">
-    import { Icon } from "flowbite-svelte-icons";
+    import {
+        ArrowUpRightFromSquareOutline,
+        GithubSolid,
+        TwitterSolid,
+    } from "flowbite-svelte-icons";
     import SocialLink from "../components/SocialLink.svelte";
     import Meta from "../components/Meta.svelte";
     import Footer from "../components/Footer.svelte";
@@ -28,24 +32,19 @@
             class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2"
         >
             <SocialLink name="GitHub" target="github">
-                <Icon
-                    name="github-solid"
+                <GithubSolid
                     class="w-6 h-6 rounded-full hover:text-gray-950 focus:text-gray-950 hover:bg-slate-50 focus:bg-slate-50 focus:outline-none"
                 />
             </SocialLink>
             <SocialLink name="Twitter / X" target="twitter">
-                <Icon
-                    name="twitter-solid"
+                <TwitterSolid
                     class="w-6 h-6 hover:text-sky-400 focus:text-sky-400 focus:outline-none"
                 />
             </SocialLink>
             <SocialLink name="Bluesky" target="bluesky">
                 <div class="inline-flex items-center gap-1 hover:text-sky-300">
                     <p>Bluesky</p>
-                    <Icon
-                        name="arrow-up-right-from-square-outline"
-                        class="w-4 h-4"
-                    />
+                    <ArrowUpRightFromSquareOutline class="w-4 h-4" />
                 </div>
             </SocialLink>
         </div>
