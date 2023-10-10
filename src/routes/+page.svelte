@@ -2,6 +2,7 @@
     import {
         ArrowUpRightFromSquareOutline,
         GithubSolid,
+        HeartSolid,
         TwitterSolid,
     } from "flowbite-svelte-icons";
     import SocialLink from "../components/SocialLink.svelte";
@@ -14,7 +15,7 @@
     <div
         class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50"
     >
-        <div class="text-center font-gisha">
+        <div class="text-center font-gisha space-y-2">
             <img
                 src="/images/profile_picture.webp"
                 width="128"
@@ -27,6 +28,10 @@
                 <h2 class="tracking-wide">Indie game developer</h2>
                 <h2 class="tracking-tight">Java, C#, Web</h2>
             </div>
+            <hr class="pb-1">
+            <SocialLink name="Donate on Ko-Fi" target="kofi">
+                <h3 class="text-xl group inline-flex items-center gap-1"><HeartSolid class="w-6 h-6 text-pink-500" /><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" /></h3>
+            </SocialLink>
         </div>
         <div
             class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2"
