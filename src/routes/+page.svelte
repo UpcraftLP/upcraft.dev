@@ -15,7 +15,7 @@
     <div
         class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50"
     >
-        <div class="text-center font-gisha space-y-2">
+        <div class="space-y-2 text-center font-gisha">
             <img
                 src="/images/profile_picture.webp"
                 width="128"
@@ -30,7 +30,7 @@
             </div>
             <hr class="pb-1">
             <SocialLink name="Donate on Ko-fi" target="ko-fi">
-                <h3 class="text-2xl font-medium group inline-flex items-center gap-1"><HeartSolid class="w-6 h-6 text-pink-500" /><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" /></h3>
+                <h3 class="inline-flex items-center gap-1 text-2xl font-medium"><HeartSolid class="w-6 h-6 text-pink-500" tabindex="-1"/><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" tabindex="-1" /></h3>
             </SocialLink>
         </div>
         <div
@@ -38,18 +38,18 @@
         >
             <SocialLink name="GitHub" target="github">
                 <GithubSolid
-                    class="w-6 h-6 rounded-full hover:text-gray-950 focus:text-gray-950 hover:bg-slate-50 focus:bg-slate-50 focus:outline-none"
+                    class="w-6 h-6 rounded-full group-hover:text-gray-950 group-focus:text-gray-950 group-hover:bg-slate-50 group-focus:bg-slate-50" tabindex="-1"
                 />
             </SocialLink>
             <SocialLink name="Twitter / X" target="twitter">
                 <TwitterSolid
-                    class="w-6 h-6 hover:text-sky-400 focus:text-sky-400 focus:outline-none"
+                    class="w-6 h-6 group-hover:text-sky-400 group-focus:text-sky-400" tabindex="-1"
                 />
             </SocialLink>
-            <SocialLink name="Bluesky" target="bluesky">
-                <div class="inline-flex items-center gap-1 hover:text-sky-300">
+            <SocialLink name="Bluesky" target="bluesky">    
+                <div class="inline-flex items-center gap-1 group-hover:text-sky-300 group-focus:text-sky-300">
                     <p>Bluesky</p>
-                    <ArrowUpRightFromSquareOutline class="w-4 h-4" />
+                    <ArrowUpRightFromSquareOutline class="w-4 h-4" tabindex="-1" />
                 </div>
             </SocialLink>
         </div>
