@@ -11,16 +11,16 @@
 </script>
 
 <Meta title="Home" />
-<div class="flex flex-col items-center justify-center w-full h-screen">
+<div class="flex flex-col items-center justify-center w-full min-h-screen">
     <div
-        class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50"
+        class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.gif')] h-[92vh] rounded-xl text-gray-50 mt-3 xl:mt-auto"
     >
         <div class="space-y-2 text-center font-gisha">
             <img
                 src="/images/profile_picture.webp"
                 width="128"
                 height="128"
-                class="m-auto rounded-xl"
+                class="hidden m-auto rounded-xl md:inline"
                 alt="Profile"
             />
             <div class="m-auto text-xl font-medium text-center">
