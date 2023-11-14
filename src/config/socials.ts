@@ -15,4 +15,5 @@ export const socials: SocialsList = {
     twitch: "https://twitch.tv/upcraftlp",
     twitter: "https://x.com/upcraftlp",
     youtube: "https://youtube.com/@upcraft_",
+    x: "https://x.com/upcraftlp",
 };

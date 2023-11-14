@@ -4,6 +4,7 @@
         GithubSolid,
         HeartSolid,
         TwitterSolid,
+        XCompanySolid,
     } from "flowbite-svelte-icons";
     import SocialLink from "../components/SocialLink.svelte";
     import Meta from "../components/Meta.svelte";
@@ -27,11 +28,22 @@
                 <h1 class="text-5xl italic">Up</h1>
                 <h2 class="tracking-wide">Indie game developer</h2>
                 <h2 class="tracking-tight">Java, C#, Web</h2>
-                <h2 class="italic pt-2">for mod commissions contact "up" on discord</h2>
+                <h2 class="italic pt-2">
+                    for mod commissions contact "up" on discord
+                </h2>
             </div>
-            <hr class="pb-1">
+            <hr class="pb-1" />
             <SocialLink name="Donate on Ko-fi" target="ko-fi">
-                <h3 class="inline-flex items-center gap-1 text-2xl font-medium"><HeartSolid class="w-6 h-6 text-pink-500" tabindex="-1"/><p class="group-hover:underline group-focus:underline">Support me!</p><ArrowUpRightFromSquareOutline class="w-4 h-4" tabindex="-1" /></h3>
+                <h3 class="inline-flex items-center gap-1 text-2xl font-medium">
+                    <HeartSolid class="w-6 h-6 text-pink-500" tabindex="-1" />
+                    <p class="group-hover:underline group-focus:underline">
+                        Support me!
+                    </p>
+                    <ArrowUpRightFromSquareOutline
+                        class="w-4 h-4"
+                        tabindex="-1"
+                    />
+                </h3>
             </SocialLink>
         </div>
         <div
@@ -39,18 +51,25 @@
         >
             <SocialLink name="GitHub" target="github">
                 <GithubSolid
-                    class="w-6 h-6 rounded-full group-hover:text-gray-950 group-focus:text-gray-950 group-hover:bg-slate-50 group-focus:bg-slate-50" tabindex="-1"
+                    class="w-6 h-6 rounded-full group-hover:text-gray-950 group-focus:text-gray-950 group-hover:bg-slate-50 group-focus:bg-slate-50"
+                    tabindex="-1"
                 />
             </SocialLink>
-            <SocialLink name="Twitter / X" target="twitter">
-                <TwitterSolid
-                    class="w-6 h-6 group-hover:text-sky-400 group-focus:text-sky-400" tabindex="-1"
+            <SocialLink name="X / Twitter" target="x">
+                <XCompanySolid
+                    class="w-6 h-6 group-hover:text-slate-900 group-focus:text-slate-950"
+                    tabindex="-1"
                 />
             </SocialLink>
-            <SocialLink name="Bluesky" target="bluesky">    
-                <div class="inline-flex items-center gap-1 group-hover:text-sky-300 group-focus:text-sky-300">
+            <SocialLink name="Bluesky" target="bluesky">
+                <div
+                    class="inline-flex items-center gap-1 group-hover:text-sky-300 group-focus:text-sky-300 group-hover:underline group-focus:underline"
+                >
                     <p>Bluesky</p>
-                    <ArrowUpRightFromSquareOutline class="w-4 h-4" tabindex="-1" />
+                    <ArrowUpRightFromSquareOutline
+                        class="w-4 h-4"
+                        tabindex="-1"
+                    />
                 </div>
             </SocialLink>
         </div>
