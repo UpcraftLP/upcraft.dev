@@ -3,6 +3,7 @@ export interface SocialsList {
 }
 
 export const socials: SocialsList = {
+    at: "at://did:plc:77uzn2lx2zhtdgr5zfvzumji",
     bluesky: "https://bsky.app/profile/did:plc:77uzn2lx2zhtdgr5zfvzumji",
     curseforge: "https://www.curseforge.com/members/upcraftlp/projects",
     //TODO discord
