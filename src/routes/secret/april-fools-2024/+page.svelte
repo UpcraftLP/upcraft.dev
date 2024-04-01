@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
   import type { ChangeEventHandler } from "svelte/elements";
 
   function formSubmit(event: SubmitEvent) {
@@ -44,9 +45,6 @@
     ) as HTMLCanvasElement;
     const inputImage = form.querySelector("#input-image") as HTMLInputElement;
     const image = inputImage.files?.item(0);
-    if (!image) {
-      return;
-    }
 
     const ctx = canvas.getContext("2d")!;
 
@@ -54,11 +52,13 @@
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // step 1: draw the uploaded icon over it, using a mask
-    ctx.save();
-    await renderPart(ctx, "/april-fools-2024/icon_mask.png");
-    ctx.globalCompositeOperation = "source-in";
-    await renderPart(ctx, URL.createObjectURL(image));
-    ctx.restore();
+    if (image !== null && image !== undefined) {
+      ctx.save();
+      await renderPart(ctx, "/april-fools-2024/icon_mask.png");
+      ctx.globalCompositeOperation = "source-in";
+      await renderPart(ctx, URL.createObjectURL(image));
+      ctx.restore();
+    }
 
     // step 2: draw the background layer
     ctx.save();
@@ -73,6 +73,10 @@
   const selectImage: ChangeEventHandler<HTMLInputElement> = (event) => {
     renderImage();
   };
+
+  if(browser) {
+    renderImage();
+  }
 </script>
 
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
