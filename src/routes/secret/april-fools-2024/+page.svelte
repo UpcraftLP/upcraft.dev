@@ -5,18 +5,25 @@
     event.preventDefault();
 
     // re-render, just in case
-    renderImage()
-      .then(() => {
-        const canvas = document.querySelector(
-          "#preview-canvas"
-        ) as HTMLCanvasElement;
-        const link = document.createElement("a");
-        link.href = canvas.toDataURL("image/png");
-        link.download = "april-fools-2024-logo.png";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      });
+    renderImage().then(() => {
+      const canvas = document.querySelector(
+        "#preview-canvas"
+      ) as HTMLCanvasElement;
+      const form = document.querySelector("#input-form") as HTMLFormElement;
+      const inputImage = form.querySelector("#input-image") as HTMLInputElement;
+      const image = inputImage.files?.item(0);
+      if (!image) {
+        return;
+      }
+      const filename = image.name.replace(/\.[^/.]+$/, "");
+
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = `april-fools-${filename}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   }
 
   async function renderPart(ctx: CanvasRenderingContext2D, part: string) {
