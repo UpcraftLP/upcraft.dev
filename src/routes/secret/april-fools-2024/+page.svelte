@@ -19,7 +19,7 @@
       const filename = image.name.replace(/\.[^/.]+$/, "");
 
       const link = document.createElement("a");
-      const quality: number = 0.8;
+      const quality: number = 0.92;
       link.href = canvas.toDataURL("image/webp", quality);
       link.download = `april-fools-${filename}.webp`;
       document.body.appendChild(link);
@@ -90,8 +90,8 @@
       <div class="mt-24 flex items-center justify-center w-full flex-col">
         <canvas
           id="preview-canvas"
-          width="2048"
-          height="2048"
+          width="1024"
+          height="1024"
           class="bg-white p-4 w-96 h-96 border border-gray-300 rounded-xl"
         >
           Your browser does not support the HTML5 canvas tag.
