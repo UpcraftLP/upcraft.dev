@@ -1,6 +1,7 @@
 <script lang="ts">
   import { browser } from "$app/environment";
   import type { ChangeEventHandler } from "svelte/elements";
+  import Footer from "../../../components/Footer.svelte";
 
   function formSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -82,21 +83,24 @@
 
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
   <div
-    class="relative flex flex-col items-center w-11/12 m-auto bg-center bg-purple-300 h-[92vh] rounded-xl text-gray-600 mt-3 xl:mt-auto"
+    class="relative flex flex-col items-center w-11/12 m-auto bg-center bg-purple-300 min-h-[92vh] rounded-xl text-gray-600 mt-3 xl:mt-auto"
   >
-    <div class="p-12">
-      <h1 class="text-5xl">April Fools 2024 Logo Generator</h1>
-      <p class="text-lg">Generate your own April Fools 2024 logo!</p>
-      <div class="mt-24 flex items-center justify-center w-full flex-col">
+    <div class="p-12 pt-8 w-full h-full">
+      <a href="/" class="hover:underline focus:underline m-auto pt-3">Home</a>
+      <div class="flex flex-col mx-auto w-fit">
+        <h1 class="text-5xl">April Fools 2024 Logo Generator</h1>
+      <p class="text-lg mt-1">Generate your own April Fools 2024 Mushroom Logo!</p>
+      </div>
+      <div class="mt-8 md:mt-24 flex items-center justify-center w-full flex-col">
         <canvas
           id="preview-canvas"
           width="1024"
           height="1024"
-          class="bg-white p-4 w-96 h-96 border border-gray-300 rounded-xl"
+          class="bg-white p-4 w-64 h-64 md:w-96 md:h-96 border border-gray-300 rounded-xl"
         >
           Your browser does not support the HTML5 canvas tag.
         </canvas>
-        <form id="input-form" on:submit={formSubmit} class="w-max">
+        <form id="input-form" on:submit={formSubmit} class="w-fit">
           <label for="input-image" class="block mt-4">Upload your Image:</label>
           <input
             type="file"
@@ -116,5 +120,7 @@
         </form>
       </div>
     </div>
+    <a href="/links/kofi" class="hover:underline focus:underline m-auto mb-4">Support me on Ko-fi 💜</a>
   </div>
+  <Footer />
 </div>
