@@ -2,6 +2,7 @@
   import { browser } from "$app/environment";
   import type { ChangeEventHandler } from "svelte/elements";
   import Footer from "../../../components/Footer.svelte";
+  import Meta from "../../../components/Meta.svelte";
 
   function formSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -81,6 +82,7 @@
   }
 </script>
 
+<Meta title="April Fools 2024 Logo Generator" noindex />
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
   <div
     class="relative flex flex-col items-center w-11/12 m-auto bg-center bg-purple-300 min-h-[92vh] rounded-xl text-gray-600 mt-3 xl:mt-auto"
