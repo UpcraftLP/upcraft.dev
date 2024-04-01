@@ -19,8 +19,9 @@
       const filename = image.name.replace(/\.[^/.]+$/, "");
 
       const link = document.createElement("a");
-      link.href = canvas.toDataURL("image/png");
-      link.download = `april-fools-${filename}.png`;
+      const quality: number = 0.8;
+      link.href = canvas.toDataURL("image/webp", quality);
+      link.download = `april-fools-${filename}.webp`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
