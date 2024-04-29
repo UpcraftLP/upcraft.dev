@@ -7,6 +7,7 @@ export const socials: SocialsList = {
     bluesky: "https://bsky.app/profile/did:plc:77uzn2lx2zhtdgr5zfvzumji",
     curseforge: "https://www.curseforge.com/members/upcraftlp/projects",
     //TODO discord
+    discord: "https://mods.upcraft.dev/discord",
     games: "https://up-does.games",
     github: "https://github.com/upcraftlp",
     itch: "https://upcraftlp.itch.io",
