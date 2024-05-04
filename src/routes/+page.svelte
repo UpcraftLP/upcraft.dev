@@ -27,9 +27,6 @@
                 <h1 class="text-5xl italic">Up</h1>
                 <h2 class="tracking-wide">Indie game developer</h2>
                 <h2 class="tracking-tight">Java, C#, Web</h2>
-                <h2 class="pt-2 italic">
-                    for mod commissions contact "up" on discord
-                </h2>
             </div>
             <hr class="pb-1" />
             <SocialLink name="Donate on Ko-fi" target="ko-fi">
