@@ -1,10 +1,9 @@
 <script lang="ts">
     import {
         ArrowUpRightFromSquareOutline,
+        DiscordSolid,
         GithubSolid,
         HeartSolid,
-        TwitterSolid,
-        XCompanySolid,
     } from "flowbite-svelte-icons";
     import SocialLink from "../components/SocialLink.svelte";
     import Meta from "../components/Meta.svelte";
@@ -28,7 +27,7 @@
                 <h1 class="text-5xl italic">Up</h1>
                 <h2 class="tracking-wide">Indie game developer</h2>
                 <h2 class="tracking-tight">Java, C#, Web</h2>
-                <h2 class="italic pt-2">
+                <h2 class="pt-2 italic">
                     for mod commissions contact "up" on discord
                 </h2>
             </div>
@@ -55,9 +54,9 @@
                     tabindex="-1"
                 />
             </SocialLink>
-            <SocialLink name="X / Twitter" target="x">
-                <XCompanySolid
-                    class="w-6 h-6 group-hover:text-slate-900 group-focus:text-slate-950"
+            <SocialLink name="Discord" target="discord">
+                <DiscordSolid
+                    class="w-6 h-6 group-hover:text-[#738ADB] group-focus:text-text-[#738ADB]"
                     tabindex="-1"
                 />
             </SocialLink>

@@ -17,7 +17,5 @@ export const socials: SocialsList = {
     modrinth: "https://modrinth.com/user/Up",
     steam: "https://steamcommunity.com/id/upcraftlp",
     twitch: "https://twitch.tv/upcraftlp",
-    twitter: "/links/x",
     youtube: "https://youtube.com/@upcraft_",
-    x: "https://x.com/upcraftlp",
 };
