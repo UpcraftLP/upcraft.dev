@@ -1,9 +1,23 @@
-.DS_Store
+# NodeJS
 node_modules
 /build
 /.svelte-kit
 /package
+vite.config.*.timestamp-*
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Misc
 .env
 .env.*
 !.env.example
-vite.config.*.timestamp-*
