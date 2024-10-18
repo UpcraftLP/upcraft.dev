@@ -20,7 +20,7 @@
     >
         <div class="space-y-2 text-center font-gisha">
             <img
-                src="/images/profile_picture.webp"
+                src="/images/profile_picture_128x.webp"
                 width="128"
                 height="128"
                 class="hidden m-auto rounded-xl md:inline"
