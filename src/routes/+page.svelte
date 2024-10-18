@@ -1,10 +1,9 @@
 <script lang="ts">
-    import {
-        ArrowUpRightFromSquareOutline,
-        DiscordSolid,
-        GithubSolid,
-        HeartSolid,
-    } from "flowbite-svelte-icons";
+    import MdiExternalLink from '~icons/mdi/external-link';
+    import MdiHeart from '~icons/mdi/heart';
+    import SimpleIconsBluesky from '~icons/simple-icons/bluesky';
+    import SimpleIconsDiscord from '~icons/simple-icons/discord';
+    import SimpleIconsGithub from '~icons/simple-icons/github';
     import SocialLink from "../components/SocialLink.svelte";
     import Meta from "../components/Meta.svelte";
     import Footer from "../components/Footer.svelte";
@@ -35,14 +34,11 @@
             <hr class="pb-1" />
             <SocialLink name="Donate on Ko-fi" target="ko-fi">
                 <h3 class="inline-flex items-center gap-1 text-2xl font-medium">
-                    <HeartSolid class="w-6 h-6 text-pink-500" tabindex="-1" />
+                    <MdiHeart class="w-6 h-6 text-pink-500" tabindex={-1} />
                     <p class="group-hover:underline group-focus:underline">
                         Support me!
                     </p>
-                    <ArrowUpRightFromSquareOutline
-                        class="w-4 h-4"
-                        tabindex="-1"
-                    />
+                    <MdiExternalLink class="w-4 h-4" tabindex={-1} />
                 </h3>
             </SocialLink>
         </div>
@@ -50,28 +46,14 @@
             class="absolute flex flex-row items-end justify-end gap-2 text-base bottom-2"
         >
             <SocialLink name="GitHub" target="github">
-                <GithubSolid
-                    class="w-6 h-6 rounded-full group-hover:text-gray-950 group-focus:text-gray-950 group-hover:bg-slate-50 group-focus:bg-slate-50"
-                    tabindex="-1"
-                />
+                <SimpleIconsGithub class="w-7 h-7 rounded-full group-hover:text-gray-950 group-focus:text-gray-950 group-hover:bg-slate-50 group-focus:bg-slate-50" tabindex={-1} />
             </SocialLink>
             <SocialLink name="Discord" target="discord">
-                <DiscordSolid
-                    class="w-6 h-6 group-hover:text-[#738ADB] group-focus:text-text-[#738ADB]"
-                    tabindex="-1"
-                />
+                <SimpleIconsDiscord class="w-7 h-7 group-hover:text-[#738ADB] group-focus:text-[#738ADB]" tabindex={-1} />
             </SocialLink>
             <SocialLink name="Bluesky" target="bluesky">
-                <div
-                    class="inline-flex items-center gap-1 group-hover:text-sky-300 group-focus:text-sky-300 group-hover:underline group-focus:underline"
-                >
-                    <p>Bluesky</p>
-                    <ArrowUpRightFromSquareOutline
-                        class="w-4 h-4"
-                        tabindex="-1"
-                    />
-                </div>
-            </SocialLink>
+                <SimpleIconsBluesky class="w-7 h-7 group-hover:text-sky-500 group-focus:text-sky-500" tabindex={-1} />
+        </SocialLink>
         </div>
     </div>
     <Footer />
