@@ -10,6 +10,10 @@
     import Footer from "../components/Footer.svelte";
 </script>
 
+<svelte:head>
+    <link rel="preload" href="/images/hero-bg.gif" as="image" media="screen" />
+</svelte:head>
+
 <Meta title="Home" />
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
     <div
