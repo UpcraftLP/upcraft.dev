@@ -10,13 +10,13 @@
 </script>
 
 <svelte:head>
-    <link rel="preload" href="/images/hero-bg.webp" as="image" media="screen" />
+    <link rel="preload" href="/images/hero_bg.webp" as="image" media="screen" />
 </svelte:head>
 
 <Meta title="Home" />
 <div class="flex flex-col items-center justify-center w-full min-h-screen">
     <div
-        class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero-bg.webp')] h-[92dvh] rounded-xl text-gray-50 mt-3 xl:mt-auto"
+        class="relative flex flex-col items-center justify-center w-11/12 m-auto bg-center bg-cover bg-[url('/images/hero_bg.webp')] h-[92dvh] rounded-xl text-gray-50 mt-3 xl:mt-auto"
     >
         <div class="space-y-2 text-center font-gisha">
             <img
