@@ -10,8 +10,8 @@ export function load({params} : {params: UrlParams}) {
     const target = socials[ref];
     
     if(!target) {
-        throw redirect(302, "/links?error=notfound");
+        redirect(302, "/links?error=notfound");
     }
 
-    throw redirect(302, target);
+    redirect(302, target);
 }

@@ -16,8 +16,9 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@sveltejs/adapter-cloudflare": "^2.3.4",
-    "@sveltejs/kit": "^1.30.4",
+    "@sveltejs/adapter-cloudflare": "^3.0.2",
+    "@sveltejs/kit": "^2.7.1",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "autoprefixer": "^10.4.20",
@@ -36,7 +37,7 @@
     "tailwindcss": "^3.4.14",
     "tslib": "^2.8.0",
     "typescript": "^5.6.3",
-    "vite": "^4.5.5"
+    "vite": "^5.4.9"
   },
   "overrides": {
     "cookie": "^1.0.1"
