@@ -10,6 +10,7 @@
 </script>
 
 <svelte:head>
+    <link rel="preload" href="/images/profile_picture_128x.webp" as="image" media="screen" />
     <link rel="preload" href="/images/hero_bg.webp" as="image" media="screen" />
 </svelte:head>
 
