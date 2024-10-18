@@ -12,7 +12,7 @@
 <svelte:head>
     <link rel="preload" href="/images/profile_picture_128x.webp" as="image" media="screen" />
     <link rel="preload" href="/images/hero_bg.webp" as="image" media="screen" />
-    <link rel="preload" href="/fonts/gisha.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/gisha.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
 
 <Meta title="Home" />
