@@ -1,8 +1,8 @@
 <script lang="ts">
   import { browser } from "$app/environment";
   import type { ChangeEventHandler } from "svelte/elements";
-  import Footer from "../../../components/Footer.svelte";
-  import Meta from "../../../components/Meta.svelte";
+  import Footer from "$components/Footer.svelte";
+  import Meta from "$components/Meta.svelte";
 
   function formSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -77,7 +77,7 @@
     renderImage();
   };
 
-  if(browser) {
+  if (browser) {
     renderImage();
   }
 </script>
@@ -91,9 +91,13 @@
       <a href="/" class="hover:underline focus:underline m-auto pt-3">Home</a>
       <div class="flex flex-col mx-auto w-fit">
         <h1 class="text-5xl">April Fools 2024 Logo Generator</h1>
-      <p class="text-lg mt-1">Generate your own April Fools 2024 Mushroom Logo!</p>
+        <p class="text-lg mt-1">
+          Generate your own April Fools 2024 Mushroom Logo!
+        </p>
       </div>
-      <div class="mt-8 md:mt-24 flex items-center justify-center w-full flex-col">
+      <div
+        class="mt-8 md:mt-24 flex items-center justify-center w-full flex-col"
+      >
         <canvas
           id="preview-canvas"
           width="1024"
@@ -122,7 +126,9 @@
         </form>
       </div>
     </div>
-    <a href="/links/kofi" class="hover:underline focus:underline m-auto mb-4">Support me on Ko-fi 💜</a>
+    <a href="/links/kofi" class="hover:underline focus:underline m-auto mb-4"
+      >Support me on Ko-fi 💜</a
+    >
   </div>
   <Footer />
 </div>

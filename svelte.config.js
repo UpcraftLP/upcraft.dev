@@ -17,6 +17,10 @@ const config = {
         exclude: ['<all>']
       }
     }),
+    alias: {
+      '$components': 'src/components',
+      '$css': 'src/css',
+    }
   },
 };
 
