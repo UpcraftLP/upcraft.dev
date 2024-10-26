@@ -73,7 +73,7 @@
     await renderPart(ctx, "/april-fools-2024/foreground_layer.png");
   }
 
-  const selectImage: ChangeEventHandler<HTMLInputElement> = (event) => {
+  const selectImage: ChangeEventHandler<HTMLInputElement> = () => {
     renderImage();
   };
 
