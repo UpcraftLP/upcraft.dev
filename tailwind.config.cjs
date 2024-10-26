@@ -5,8 +5,8 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        'gisha': ['Gisha']
-      }
+        gisha: ["Gisha"],
+      },
     },
   },
 

@@ -4,5 +4,5 @@ import { redirect } from "@sveltejs/kit";
 // TODO react to ?error query parameter
 
 export function load() {
-    redirect(302, '/');
+  redirect(302, "/");
 }

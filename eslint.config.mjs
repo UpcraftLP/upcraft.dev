@@ -6,24 +6,22 @@ import svelteParser from "svelte-eslint-parser";
 import svelteConfig from "./svelte.config.js";
 
 export default [
-    js.configs.recommended,
-    eslintConfigPrettier,
-    {
-        files: ["**/*.svelte", "*.svelte"],
-        languageOptions: {
-            parser: svelteParser,
-            parserOptions: {
-                svelteConfig,
-                parser: tsParser,
-            },
-            globals: {
-                ...globals.browser,
-            }
-        },
+  js.configs.recommended,
+  eslintConfigPrettier,
+  {
+    files: ["**/*.svelte", "*.svelte"],
+    languageOptions: {
+      parser: svelteParser,
+      parserOptions: {
+        svelteConfig,
+        parser: tsParser,
+      },
+      globals: {
+        ...globals.browser,
+      },
     },
-    {
-        ignores: [
-            '.svelte-kit/**'
-        ]
-    }
+  },
+  {
+    ignores: [".svelte-kit/**"],
+  },
 ];
