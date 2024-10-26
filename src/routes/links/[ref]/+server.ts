@@ -1,5 +1,5 @@
 import { redirect } from "@sveltejs/kit";
-import type { EntryGenerator, RouteParams } from "./$types";
+import type { EntryGenerator, RequestHandler } from "./$types";
 import { socials } from "$lib/server/socials";
 
 export const entries: EntryGenerator = () => {
@@ -10,7 +10,7 @@ export const entries: EntryGenerator = () => {
   ];
 };
 
-export function load({ params }: { params: RouteParams }) {
+export const GET: RequestHandler = ({ params }) => {
   const ref = params.ref;
   const target = socials[ref];
 
@@ -19,4 +19,4 @@ export function load({ params }: { params: RouteParams }) {
   }
 
   redirect(302, target);
-}
+};

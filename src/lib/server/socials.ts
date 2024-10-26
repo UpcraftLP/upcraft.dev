@@ -2,10 +2,15 @@ export interface SocialsList {
   readonly [key: string]: string | undefined;
 }
 
+export const atProto = {
+  did: "did:plc:77uzn2lx2zhtdgr5zfvzumji",
+};
+
 export const socials: SocialsList = {
   // not a valid URL yet
-  // at: "at://did:plc:77uzn2lx2zhtdgr5zfvzumji",
-  bluesky: "https://bsky.app/profile/did:plc:77uzn2lx2zhtdgr5zfvzumji",
+  // at: `at://${atProto.did}`,
+  bluesky: `https://bsky.app/profile/${atProto.did}`,
+  bsky: "/links/bluesky",
   curseforge: "https://www.curseforge.com/members/upcraftlp/projects",
   //TODO discord
   discord: "https://mods.upcraft.dev/discord",

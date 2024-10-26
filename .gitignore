@@ -4,6 +4,7 @@ node_modules
 /.svelte-kit
 /package
 vite.config.*.timestamp-*
+/.wrangler
 
 # JetBrains IDEs
 .idea/
