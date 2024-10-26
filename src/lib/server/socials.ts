@@ -8,7 +8,7 @@ export const atProto = {
 
 export const socials: SocialsList = {
   // not a valid URL yet
-  // at: `at://${atProto.did}`,
+  // atproto: `at://${atProto.did}`,
   bluesky: `https://bsky.app/profile/${atProto.did}`,
   bsky: "/links/bluesky",
   curseforge: "https://www.curseforge.com/members/upcraftlp/projects",

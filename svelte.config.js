@@ -21,6 +21,14 @@ const config = {
       $components: "src/components",
       $css: "src/css",
     },
+    prerender: {
+      entries: [
+        "*",
+        "/security.txt",
+        "/.well-known/security.txt",
+        "/.well-known/atproto-did",
+      ]
+    },
   },
 };
 
