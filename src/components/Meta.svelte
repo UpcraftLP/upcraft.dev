@@ -5,9 +5,13 @@
   const hostname = $page.url.hostname;
   const baseUrl = $page.url.origin;
 
-  export let title: string;
-  export let description: string | undefined = undefined;
-  export let noindex: boolean = false;
+  interface Props {
+    title: string;
+    description?: string | undefined;
+    noindex?: boolean;
+  }
+
+  let { title, description = $bindable(undefined), noindex = false }: Props = $props();
 
   const twitterHandle = "@upcraftlp";
 
@@ -35,7 +39,7 @@
     description: description,
     image,
     imageAlt,
-    handle: twitterHandle,
+    creator: twitterHandle,
   }}
   openGraph={{
     url: currentPageUrl,

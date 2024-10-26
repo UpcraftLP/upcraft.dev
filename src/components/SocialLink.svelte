@@ -1,11 +1,22 @@
 <script lang="ts">
   import classNames from "classnames";
 
-  export let target: string;
-  export let name: string | undefined | null = undefined;
-  export let tabindex: number | undefined = 0;
-  let className: string | undefined = undefined;
-  export { className as class };
+  interface Props {
+    target: string;
+    name?: string | undefined | null;
+    tabindex?: number | undefined;
+    class?: string | undefined;
+    children?: import('svelte').Snippet;
+  }
+
+  let {
+    target,
+    name = undefined,
+    tabindex = 0,
+    class: className = undefined,
+    children
+  }: Props = $props();
+  
 </script>
 
 <a
@@ -16,5 +27,5 @@
   class={classNames("group", className)}
   {tabindex}
 >
-  <slot />
+  {@render children?.()}
 </a>

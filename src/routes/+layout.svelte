@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import "$css/app.postcss";
+  let { children } = $props();
 </script>
 
-<slot />
+{@render children?.()}

@@ -106,7 +106,7 @@
         >
           Your browser does not support the HTML5 canvas tag.
         </canvas>
-        <form id="input-form" on:submit={formSubmit} class="w-fit">
+        <form id="input-form" onsubmit={formSubmit} class="w-fit">
           <label for="input-image" class="block mt-4">Upload your Image:</label>
           <input
             type="file"
@@ -115,7 +115,7 @@
             accept="image/*"
             class="mt-2"
             required
-            on:change={selectImage}
+            onchange={selectImage}
           />
           <button
             type="submit"
