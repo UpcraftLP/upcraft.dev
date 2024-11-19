@@ -1,6 +1,24 @@
 import adapter from "@sveltejs/adapter-cloudflare";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
+// eslint-disable-next-line no-undef
+const env = process.env;
+
+/**
+ * @template T unknown
+ * @param {Array<T | undefined>} params
+ * @returns {T}
+ */
+function firstDefined(...params) {
+  for (const p of params) {
+    if (p !== undefined) {
+      return p;
+    }
+  }
+
+  throw new Error("All elements were undefined!");
+}
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
@@ -27,7 +45,8 @@ const config = {
         "/security.txt",
         "/.well-known/security.txt",
         "/.well-known/atproto-did",
-      ]
+      ],
+      origin: firstDefined(env.FRONTEND_URL, env.CF_PAGES_URL, 'https://upcraft.dev')
     },
   },
 };

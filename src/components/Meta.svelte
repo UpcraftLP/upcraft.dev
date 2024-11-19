@@ -24,7 +24,7 @@
   const imageAlt = "Up's profile picture";
   const imageSize = { width: 1080, height: 1080 };
 
-  const formattedTitle = `${title} - ${hostname}`;
+  const formattedTitle = `${title} - ${siteName}`;
 </script>
 
 <MetaTags
